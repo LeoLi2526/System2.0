@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "mode": "microphone",
+        "start_time": "2026-02-09 17:52:09",
+        "end_time": "2026-02-09 17:52:38"
+    },
+    "content": [
+        {
+            "timestamp": "2026-02-09 17:52:21",
+            "speaker": "Speaker 2",
+            "text": "我明天下午要去开会。",
+            "status": "final"
+        },
+        {
+            "timestamp": "2026-02-09 17:52:33",
+            "speaker": "Speaker 3",
+            "text": "给我写一首关于春天的诗，另外我明天要去找小王。",
+            "status": "final"
+        },
+        {
+            "timestamp": "2026-02-09 17:52:36",
+            "speaker": "Speaker 3",
+            "text": "我要让他帮我做一个 PPT。",
+            "status": "final"
+        }
+    ],
+    "full_text": "[Speaker 2] 我明天下午要去开会。[Speaker 3] 给我写一首关于春天的诗，另外我明天要去找小王。[Speaker 3] 我要让他帮我做一个 PPT。"
+}
