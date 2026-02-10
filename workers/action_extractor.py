@@ -43,6 +43,17 @@ class ActionExtractorWorker:
         fallback_logger.logger.info(f"Agent Information: {self.config['llm']['extraction_model']}")
 
         response = call_llm_dashscope(prompt, 'extraction_model').get("actions", [])
+        
+        # 强制生成系统级唯一ID，确保 ID 的唯一性和格式统一
+        import uuid
+        from datetime import datetime
+        
+        for i, action in enumerate(response):
+            # 使用时间戳 + UUID 前8位 + 序号 组合生成唯一ID
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            unique_suffix = str(uuid.uuid4())[:8]
+            action['id'] = f"action_{timestamp}_{unique_suffix}_{i}"
+            
         return response
 '''from utils.audio_integration_manager import AudioIntegrationManager
 result_path = os.getenv("RESULT_PATH")
