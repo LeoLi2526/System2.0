@@ -1,4 +1,4 @@
-from utils.load_selector import load_config, load_prompt_template, call_llm_dashscope
+from utils.load_selector import load_config, load_prompt_template, call_llm_dashscope, call_llm_dashscope_async
 from typing import Optional, List, Dict, Any
 import os
 import json
@@ -13,7 +13,7 @@ class RouteExecuter:
         self.config = load_config(config_path)
 
 
-    def execute(self, worker_types: List[Dict[str, List]], action_extractor_results: Dict[str, Any]) -> List[Dict[str, Any]]:
+    async def execute(self, worker_types: List[Dict[str, List]], action_extractor_results: Dict[str, Any]) -> List[Dict[str, Any]]:
         final_responses = []
         for worker_type_dict in worker_types:
             # worker_types 实际上是 [{worker_type: id}, ...] 这种结构
@@ -32,7 +32,7 @@ class RouteExecuter:
             prompt = prompt_template.format_map({"descriptions":action_extractor_result})
             print(f"正在执行任务 [{worker_type_name}] (ID: {id})...")
             
-            response = call_llm_dashscope(prompt, "worker_model")
+            response = await call_llm_dashscope_async(prompt, "worker_model")
 
             
             while True:  
@@ -73,7 +73,7 @@ class RouteExecuter:
 
                     try:
                         #cycle_prompt = current_prompt_template.format_map({"last_response":last_response, "user_advice":user_advice})
-                        cycle_response = call_llm_dashscope(current_prompt, "worker_model")
+                        cycle_response = await call_llm_dashscope_async(current_prompt, "worker_model")
                         response = cycle_response
                     except Exception as e:
                         print(f"Prompt 构造失败: {e}")

@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import asyncio
 from datetime import datetime
 from workers.supervisor import SupervisorWorker
 
@@ -37,7 +38,7 @@ def save_text_input():
         
     print(f"文本已保存至: {file_path}")
     print("正在初始化系统并处理文本输入...")
-    process_interaction(text_input=text_content)
+    asyncio.run(process_interaction(text_input=text_content))
 
 def handle_voice_input():
     print("=== 语音输入模式 ===")
@@ -47,9 +48,9 @@ def handle_voice_input():
     input("3. 确认完成后，请在此处按回车键继续...")
     
     print("正在初始化系统并读取语音转录...")
-    process_interaction()
+    asyncio.run(process_interaction())
 
-def process_interaction(text_input=None):
+async def process_interaction(text_input=None):
     """
     统一处理用户交互流程
     :param text_input: 如果有值，则为文本输入模式；否则为语音输入模式
@@ -57,7 +58,7 @@ def process_interaction(text_input=None):
     try:
         supervisor = SupervisorWorker()
         # 获取原始动作数据和分类结果
-        action_results, classified_results = supervisor.extract_and_classify(text_input=text_input)
+        action_results, classified_results = await supervisor.extract_and_classify(text_input=text_input)
         
         if not classified_results:
             print("未提取到任何有效的动作或意图。")
@@ -98,7 +99,7 @@ def process_interaction(text_input=None):
             print("没有待执行的动作。")
         else:
             print(f"开始执行筛选后的 {len(filtered_results)} 个动作...")
-            final_responses = supervisor.execute_filtered_actions(filtered_results, action_results)
+            final_responses = await supervisor.execute_filtered_actions(filtered_results, action_results)
             
             print("=== 执行结果 ===")
             print(json.dumps(final_responses, indent=2, ensure_ascii=False))

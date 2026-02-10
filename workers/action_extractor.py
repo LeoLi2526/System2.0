@@ -3,7 +3,7 @@ import json
 import uuid
 from datetime import datetime
 from utils.debug.fallback_logger import fallback_logger
-from utils.load_selector import load_prompt_template, load_config, call_llm_dashscope
+from utils.load_selector import load_prompt_template, load_config, call_llm_dashscope, call_llm_dashscope_async
 from utils.audio_integration_manager import AudioIntegrationManager
 from typing import Optional, List, Dict, Any
 from dotenv import load_dotenv
@@ -14,7 +14,7 @@ class ActionExtractorWorker:
     def __init__(self):
         self.prompt_template = load_prompt_template("action_extraction") # 从文件加载提示模板
         self.config = load_config(config_path) # 从文件加载配置
-    def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
+    async def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
         if text_input:
             # 如果有文本输入，直接构造格式化数据                       
             transcription_data = {
@@ -40,7 +40,9 @@ class ActionExtractorWorker:
         fallback_logger.logger.info(f"Action Extraction Prompt Length: {len(prompt)}")
         fallback_logger.logger.info(f"Agent Information: {self.config['llm']['extraction_model']}")
 
-        response = call_llm_dashscope(prompt, 'extraction_model').get("actions", [])
+        # 异步调用
+        response_data = await call_llm_dashscope_async(prompt, 'extraction_model')
+        response = response_data.get("actions", []) if response_data else []
         
         # 强制生成系统级唯一ID，确保 ID 的唯一性和格式统一
 
