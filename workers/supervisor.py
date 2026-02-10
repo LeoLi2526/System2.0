@@ -20,15 +20,15 @@ class SupervisorWorker:
         self.route_executer = RouteExecuter()
 
     #Action Extraction
-    def extract_actions(self) -> List[Dict[str, Any]]:
-        return self.action_extractor.extract_actions()
+    def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
+        return self.action_extractor.extract_actions(text_input)
     
-    def extract_and_classify(self) -> tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    def extract_and_classify(self, text_input: Optional[str] = None) -> tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
         """
         执行动作提取和初步分类
         返回: (所有动作提取结果列表, 包含分类信息的完整结果列表)
         """
-        action_extractor_results = self.extract_actions()
+        action_extractor_results = self.extract_actions(text_input)
         classified_results = []
 
         for action_extractor_result in action_extractor_results:

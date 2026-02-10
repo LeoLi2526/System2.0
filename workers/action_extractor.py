@@ -13,10 +13,23 @@ class ActionExtractorWorker:
     def __init__(self):
         self.prompt_template = load_prompt_template("action_extraction") # 从文件加载提示模板
         self.config = load_config(config_path) # 从文件加载配置
-    def extract_actions(self) -> List[Dict[str, Any]]:
-        with open(result_path, 'r', encoding='utf-8') as f:
-            raw_audio_data = json.load(f)
-        transcription_data = AudioIntegrationManager().convert_to_system_format(raw_audio_data) 
+    def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
+        if text_input:
+            # 如果有文本输入，直接构造格式化数据
+            import time
+            from datetime import datetime
+            
+            transcription_data = {
+                "full_text": text_input,
+                "request_maker": "User",
+                "participants": ["User"],
+                "start_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            }
+        else:
+            # 否则从文件读取转录结果
+            with open(result_path, 'r', encoding='utf-8') as f:
+                raw_audio_data = json.load(f)
+            transcription_data = AudioIntegrationManager().convert_to_system_format(raw_audio_data) 
 
         full_text = transcription_data.get("full_text", "")
         request_maker = transcription_data.get("request_maker", "")

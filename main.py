@@ -36,8 +36,8 @@ def save_text_input():
         f.write(text_content)
         
     print(f"文本已保存至: {file_path}")
-    print("系统暂不进行进一步处理。")
-    input("按回车键返回主菜单...")
+    print("正在初始化系统并处理文本输入...")
+    process_interaction(text_input=text_content)
 
 def handle_voice_input():
     print("=== 语音输入模式 ===")
@@ -46,11 +46,18 @@ def handle_voice_input():
     print("2. 在音频代理完成录音和转录后，确保结果已保存。")
     input("3. 确认完成后，请在此处按回车键继续...")
     
-    print("正在初始化系统并提取动作...")
+    print("正在初始化系统并读取语音转录...")
+    process_interaction()
+
+def process_interaction(text_input=None):
+    """
+    统一处理用户交互流程
+    :param text_input: 如果有值，则为文本输入模式；否则为语音输入模式
+    """
     try:
         supervisor = SupervisorWorker()
         # 获取原始动作数据和分类结果
-        action_results, classified_results = supervisor.extract_and_classify()
+        action_results, classified_results = supervisor.extract_and_classify(text_input=text_input)
         
         if not classified_results:
             print("未提取到任何有效的动作或意图。")
