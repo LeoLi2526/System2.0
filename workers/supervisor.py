@@ -23,15 +23,19 @@ class SupervisorWorker:
     def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
         return self.action_extractor.extract_actions(text_input)
     
-    def extract_and_classify(self, text_input: Optional[str] = None) -> tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    def extract_and_classify(self, text_input: Optional[str] = None) -> tuple[Dict[str, Any], List[Dict[str, Any]]]:
         """
         执行动作提取和初步分类
-        返回: (所有动作提取结果列表, 包含分类信息的完整结果列表)
+        返回: (以ID为键的动作提取结果字典, 包含分类信息的完整结果列表)
         """
-        action_extractor_results = self.extract_actions(text_input)
+        action_extractor_list = self.extract_actions(text_input)
+        # 将列表转换为字典，以ID为键，方便后续查找
+        action_extractor_results = {item['id']: item for item in action_extractor_list if 'id' in item}
+        
         classified_results = []
 
-        for action_extractor_result in action_extractor_results:
+        # 遍历字典的值进行分类
+        for action_extractor_result in action_extractor_results.values():
             classifier_result = self.intelligent_classifier.classify_actions(action_extractor_result)
             # 组合基本信息和分类结果
             plus_information = {
@@ -47,9 +51,11 @@ class SupervisorWorker:
             
         return action_extractor_results, classified_results
 
-    def execute_filtered_actions(self, filtered_classified_results: List[Dict[str, Any]], action_extractor_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def execute_filtered_actions(self, filtered_classified_results: List[Dict[str, Any]], action_extractor_results: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         执行经过筛选的动作列表
+        :param filtered_classified_results: 经过筛选的分类结果列表
+        :param action_extractor_results: 原始动作提取结果字典 (ID -> Action)
         """
         worker_types = []
         unknown_results = []
@@ -64,15 +70,9 @@ class SupervisorWorker:
         # 处理未知类型的任务 (Prompt Creation)
         if len(unknown_results) > 0:
             prompt_creator = PromptCreatorWorker()
-            # 这里简化处理，虽然 prompt_creation 看起来能处理多个，但根据代码逻辑它似乎一次生成一个类型的prompt? 
-            # 原代码逻辑：prompt_creator.prompt_creation 接受列表，似乎是针对一组unknown的任务生成一个prompt?
-            # 让我们仔细看看原代码：
-            # new_prompt , worker_type = prompt_creator.prompt_creation([unknown_result], action_extractor_results, user_advice = None)
-            # 它是在循环里调用的，所以是对每个unknown结果单独处理。
             
             for unknown_result in unknown_results:
-                # 注意：prompt_creator.prompt_creation 需要传入 problem_results 列表和 action_extractor_results
-                # 这里我们传入单个 unknown_result 包装成列表
+                # 传入单个 unknown_result 包装成列表，以及完整的动作字典
                 new_prompt, worker_type = prompt_creator.prompt_creation([unknown_result], action_extractor_results, user_advice=None)
                 
                 # 确保目录存在

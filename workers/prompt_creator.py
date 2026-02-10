@@ -12,19 +12,20 @@ class PromptCreatorWorker:
         self.prompt_template = load_prompt_template("prompt_creator") # 从文件加载提示模板
         self.config = load_config(config_path) # 从文件加载配置
 
-    def prompt_creation(self,  problem_results:List[Dict[str, Any]], action_extractor_results:List[Dict[str, Any]], user_advice:str = None) -> str:
+    def prompt_creation(self,  problem_results:List[Dict[str, Any]], action_extractor_results:Dict[str, Any], user_advice:str = None) -> str:
         problem_full_informations = []
         worker_capabilities = load_worker_capabilities()
         for result in problem_results:
             id = result.get("id")
-            for action_extractor_result in action_extractor_results:
-                if action_extractor_result.get("id") == id:
-                    problem_full_information = {"id":result.get("id"), 
-                                               "start_time":result.get("start_time"),
-                                               "request_maker":result.get("request_maker"),
-                                               "reason":result.get("reason"),
-                                               "details":action_extractor_result.get("descriptions").get("details")}
-                    problem_full_informations.append(problem_full_information)
+            # 直接通过字典查找，不再遍历列表
+            action_extractor_result = action_extractor_results.get(id)
+            if action_extractor_result:
+                problem_full_information = {"id":result.get("id"), 
+                                           "start_time":result.get("start_time"),
+                                           "request_maker":result.get("request_maker"),
+                                           "reason":result.get("reason"),
+                                           "details":action_extractor_result.get("descriptions", {}).get("details")}
+                problem_full_informations.append(problem_full_information)
                     
             if user_advice:
                 break
