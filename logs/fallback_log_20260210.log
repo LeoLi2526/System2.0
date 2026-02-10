@@ -1413,3 +1413,57 @@ json.decoder.JSONDecodeError: Extra data: line 22 column 1 (char 687)
   "meeting_requirement": "clear_communication",
   "adjusted_volume": 65,
   "feedback": "Volume has been increased from 50 to 65 to ensure c...
+2026-02-10 16:01:15,143 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 16:01:15,143 - INFO - Agent Information: deepseek-v3
+2026-02-10 16:01:29,260 - INFO - LLM Response Code: 200
+2026-02-10 16:01:29,260 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 16:01:31,391 - INFO - LLM Response Code: 200
+2026-02-10 16:01:31,391 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 16:01:33,956 - INFO - LLM Response Code: 200
+2026-02-10 16:01:33,956 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，与TextGenerationWorker的能力定义完全匹配",
+  "confidence": 1.0
+}...
+2026-02-10 16:01:37,537 - INFO - LLM Response Code: 200
+2026-02-10 16:01:37,537 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且符合MemoExtractionWorker的输入模式'委托.*'，该Worker具备'委托任务分配'能力",
+  "confidence": 0.95
+}...
+2026-02-10 16:01:58,634 - INFO - LLM Response Code: 200
+2026-02-10 16:01:58,634 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境控制助手，负责根据用户需求调整设备音量等环境参数",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备",
+                "用户意见": "None"
+ ...
+2026-02-10 16:02:02,522 - INFO - LLM Response Code: 200
+2026-02-10 16:02:02,522 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿柳梢，\n细雨润物静悄悄。\n花开满园香四溢，\n燕舞莺歌乐逍遥。\n\n溪水潺潺映碧空，\n蝴蝶翩翩戏芳丛。\n最是一年春好处，\n生机盎然入画中。",
+    "word_count": 56,
+    "confidence": 0.9
+}...
+2026-02-10 16:02:05,732 - INFO - LLM Response Code: 200
+2026-02-10 16:02:05,732 - INFO - W-8 LLM 响应内容: {
+  "text_output": {
+    "action": "adjust_volume",
+    "parameters": {
+      "device": "speaker",
+      "volume_level": "low",
+      "context": "meeting_preparation"
+    },
+    "confirmation": "已将扬声器...
