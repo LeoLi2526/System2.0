@@ -1,7 +1,6 @@
 
 import os, json
 from utils.debug.fallback_logger import fallback_logger
-from dashscope import Generation
 from typing import Optional, List, Dict, Any
 from utils.load_selector import load_config, load_prompt_template, load_worker_capabilities, call_llm_dashscope
 from dotenv import load_dotenv

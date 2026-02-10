@@ -1,5 +1,5 @@
 from utils.debug.fallback_logger import fallback_logger
-import yaml,os,re,json
+import yaml,os,re,json,ast
 from typing import Optional, List, Dict, Any
 from dashscope import Generation
 def load_prompt_template(template_name: str, for_worker: str = False) -> str:
@@ -51,7 +51,7 @@ def call_llm_dashscope(prompt: str, model_name: str) -> Optional[str]:
             cleaned_result = re.sub(r'```\s*$', '', cleaned_result, flags=re.MULTILINE)
             cleaned_result = cleaned_result.strip()
             fallback_logger.logger.info(f"W-8 LLM 响应内容: {cleaned_result[:200] if cleaned_result else 'None'}...")
-            result = json.loads(cleaned_result)
+            result = ast.literal_eval(cleaned_result)
             return result
                 
         else:

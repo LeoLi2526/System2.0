@@ -36,11 +36,10 @@ class PromptCreatorWorker:
                 response = call_llm_dashscope(prompt, 'promptcreator_model')
                 process_prompt = response.get("prompt")[0]
                 identity = process_prompt.get("identity")
-                input_data = "{{descriptions}}"
                 text_output = {key:"" for key in process_prompt.get("json_method")}
                 tips = response.get("tips")
                 tips_text = ";\n".join(tips)
-                final_prompt = f"角色定位：{identity}\n输入数据：{input_data}\n注意事项：\n{tips_text}\n请严格按照以下JSON格式输出：\n"+"{"+"{text_output}"+"}"
+                final_prompt = f"角色定位：{identity}\n输入数据："+"{"+"descriptions"+"}"+"\n注意事项：\n"+tips_text+"\n请严格按照以下JSON格式输出：\n"+"{"f"{text_output}"+"}"
                 worker_type = response.get("worker_type")
         return final_prompt , worker_type  #用于未定义worker的prompt      
 

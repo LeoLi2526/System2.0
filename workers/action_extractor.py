@@ -1,6 +1,7 @@
 import os
 import json
-
+import uuid
+from datetime import datetime
 from utils.debug.fallback_logger import fallback_logger
 from utils.load_selector import load_prompt_template, load_config, call_llm_dashscope
 from utils.audio_integration_manager import AudioIntegrationManager
@@ -15,10 +16,7 @@ class ActionExtractorWorker:
         self.config = load_config(config_path) # 从文件加载配置
     def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
         if text_input:
-            # 如果有文本输入，直接构造格式化数据
-            import time
-            from datetime import datetime
-            
+            # 如果有文本输入，直接构造格式化数据                       
             transcription_data = {
                 "full_text": text_input,
                 "request_maker": "User",
@@ -45,8 +43,7 @@ class ActionExtractorWorker:
         response = call_llm_dashscope(prompt, 'extraction_model').get("actions", [])
         
         # 强制生成系统级唯一ID，确保 ID 的唯一性和格式统一
-        import uuid
-        from datetime import datetime
+
         
         for i, action in enumerate(response):
             # 使用时间戳 + UUID 前8位 + 序号 组合生成唯一ID
