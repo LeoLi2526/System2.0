@@ -1,1 +1,452 @@
-2026-02-09 18:38:56,880 - ERROR - {"timestamp": "2026-02-09T18:38:56.880031", "source": "prompt_selector", "error": "提示模板 加载失败:[Errno 2] No such file or directory: 'utils/templates/prompt_templates/action_extractor.txt'"}
+2026-02-09 20:07:58,697 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 20:07:58,697 - INFO - Agent Information: deepseek-v3
+2026-02-09 20:08:12,456 - INFO - LLM Response Code: 200
+2026-02-09 20:08:12,457 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 20:14:46,038 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 20:14:46,039 - INFO - Agent Information: deepseek-v3
+2026-02-09 20:14:56,223 - INFO - LLM Response Code: 200
+2026-02-09 20:14:56,223 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 20:20:01,078 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 20:20:01,079 - INFO - Agent Information: deepseek-v3
+2026-02-09 20:20:16,715 - INFO - LLM Response Code: 200
+2026-02-09 20:20:16,716 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 20:36:51,819 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 20:36:51,820 - INFO - Agent Information: deepseek-v3
+2026-02-09 20:37:02,794 - INFO - LLM Response Code: 200
+2026-02-09 20:37:02,794 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 21:49:16,459 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 21:49:16,459 - INFO - Agent Information: deepseek-v3
+2026-02-09 21:49:30,526 - INFO - LLM Response Code: 200
+2026-02-09 21:49:30,526 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 21:49:30,527 - ERROR - 智能分类异常: 'Workers_explanations'
+2026-02-09 21:50:40,412 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 21:50:40,413 - INFO - Agent Information: deepseek-v3
+2026-02-09 21:50:54,508 - INFO - LLM Response Code: 200
+2026-02-09 21:50:54,508 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 21:50:54,509 - ERROR - 智能分类异常: 'Workers_capabilities'
+2026-02-09 21:51:46,217 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 21:51:46,217 - INFO - Agent Information: deepseek-v3
+2026-02-09 21:52:00,887 - INFO - LLM Response Code: 200
+2026-02-09 21:52:00,888 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 21:52:00,888 - ERROR - 智能分类异常: Replacement index 0 out of range for positional args tuple
+2026-02-09 21:56:14,323 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 21:56:14,323 - INFO - Agent Information: deepseek-v3
+2026-02-09 21:56:25,079 - INFO - LLM Response Code: 200
+2026-02-09 21:56:25,080 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 21:56:25,080 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:01:00,579 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:01:00,579 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:01:15,246 - INFO - LLM Response Code: 200
+2026-02-09 22:01:15,246 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:01:15,246 - ERROR - 智能分类异常: str.format_map() takes no keyword arguments
+2026-02-09 22:01:15,246 - ERROR - 智能分类异常: str.format_map() takes no keyword arguments
+2026-02-09 22:01:15,246 - ERROR - 智能分类异常: str.format_map() takes no keyword arguments
+2026-02-09 22:01:15,246 - ERROR - 智能分类异常: str.format_map() takes no keyword arguments
+2026-02-09 22:03:53,186 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:03:53,187 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:04:05,981 - INFO - LLM Response Code: 200
+2026-02-09 22:04:05,981 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:04:05,981 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:05,981 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:05,981 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:05,982 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:43,877 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:04:43,878 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:04:54,485 - INFO - LLM Response Code: 200
+2026-02-09 22:04:54,486 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:04:54,486 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:54,486 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:54,486 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:04:54,486 - ERROR - 智能分类异常: '"id"'
+2026-02-09 22:05:11,770 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:05:11,770 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:05:24,521 - INFO - LLM Response Code: 200
+2026-02-09 22:05:24,522 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:05:24,522 - ERROR - 智能分类异常: '\n    "worker_type"'
+2026-02-09 22:05:24,522 - ERROR - 智能分类异常: '\n    "worker_type"'
+2026-02-09 22:05:24,522 - ERROR - 智能分类异常: '\n    "worker_type"'
+2026-02-09 22:05:24,522 - ERROR - 智能分类异常: '\n    "worker_type"'
+2026-02-09 22:07:49,762 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:07:49,762 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:08:02,009 - INFO - LLM Response Code: 200
+2026-02-09 22:08:02,009 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:08:02,010 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:02,010 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:02,010 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:02,010 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:29,675 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:08:29,675 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:08:44,077 - INFO - LLM Response Code: 200
+2026-02-09 22:08:44,078 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:08:44,078 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:44,078 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:44,078 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:08:44,079 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:09:06,427 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:09:06,428 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:09:19,532 - INFO - LLM Response Code: 200
+2026-02-09 22:09:19,532 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:11:06,252 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:11:06,253 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:11:19,181 - INFO - LLM Response Code: 200
+2026-02-09 22:11:19,182 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:11:55,748 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:12:04,698 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:12:04,699 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:13:29,615 - INFO - LLM Response Code: 200
+2026-02-09 22:18:40,684 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:23:35,822 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:23:35,822 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:24:52,190 - INFO - LLM Response Code: 200
+2026-02-09 22:24:52,190 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:24:52,191 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:41:48,075 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:41:48,075 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:42:01,945 - INFO - LLM Response Code: 200
+2026-02-09 22:42:01,946 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:42:01,946 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:42:01,946 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:42:01,946 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:42:01,946 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:42:01,946 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:42:01,946 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:42:01,947 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:42:01,947 - ERROR - 智能分类异常: '\n            "worker_type"'
+2026-02-09 22:49:00,051 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:49:00,051 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:49:13,699 - INFO - LLM Response Code: 200
+2026-02-09 22:49:13,699 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:49:22,186 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:49:23,544 - INFO - LLM Response Code: 200
+2026-02-09 22:49:23,544 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "没有提供Worker能力定义，无法确定哪个Worker可以处理设置备忘的请求",
+  "confidence": 0.0
+}...
+2026-02-09 22:49:26,408 - ERROR - 加载Worker能力定义失败: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2026-02-09 22:49:27,913 - INFO - LLM Response Code: 200
+2026-02-09 22:49:27,913 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "没有Worker能力定义提供，无法确定是否有Worker能处理文本生成请求",
+  "confidence": 0.0
+}...
+2026-02-09 22:50:46,335 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:50:46,335 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:50:59,973 - INFO - LLM Response Code: 200
+2026-02-09 22:50:59,973 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:51:06,219 - INFO - LLM Response Code: 200
+2026-02-09 22:51:06,219 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，符合MemoExtractionWorker的能力定义中的'设置提醒'和'记录未来事件'能力，并且关键词'备忘'也匹配该Worker的关键词列表。",
+  "confidence": 0.9
+}...
+2026-02-09 22:51:31,308 - INFO - LLM Response Code: 200
+2026-02-09 22:51:31,308 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，这与TextGenerationWorker的能力定义中的'创作文本内容'、'生成教程步骤'等能力完全匹配。",
+  "confidence": 1.0
+}...
+2026-02-09 22:53:12,207 - INFO - LLM Response Code: 200
+2026-02-09 22:53:39,574 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，符合MemoExtractionWorker的关键词'备忘'和输入模式'记住.*'，且该Worker的能力包括'记录未来事件'和'设置提醒'，与用户请求高度匹配。",
+  "confidence": 0.95
+}...
+2026-02-09 22:56:22,474 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 22:56:22,474 - INFO - Agent Information: deepseek-v3
+2026-02-09 22:56:35,660 - INFO - LLM Response Code: 200
+2026-02-09 22:56:35,661 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 22:56:50,675 - INFO - LLM Response Code: 200
+2026-02-09 22:56:50,676 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，符合MemoExtractionWorker的关键词'备忘'和能力定义中的'记录未来事件'、'设置提醒'功能",
+  "confidence": 0.95
+}...
+2026-02-09 22:56:53,362 - INFO - LLM Response Code: 200
+2026-02-09 22:56:53,362 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，该请求与TextGenerationWorker的能力定义中的'capabilities'（如'创作文本内容'、'生成教程步骤'）完全匹配，且关键词和输入模式也高度相关。",
+  "confidence": 1.0
+}...
+2026-02-09 22:56:56,108 - INFO - LLM Response Code: 200
+2026-02-09 22:56:56,108 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，这与MemoExtractionWorker的能力定义中的'设置提醒'和'记录未来事件'功能相匹配，且关键词'备忘'也出现在该Worker的关键词列表中。",
+  "confidence": 0.95
+}...
+2026-02-09 22:56:58,158 - INFO - LLM Response Code: 200
+2026-02-09 22:56:58,158 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "用户请求信息仅为'委托任务'，未提供足够的具体任务描述或关键词，无法匹配到任何Worker的能力定义。",
+  "confidence": 0.0
+}...
+2026-02-09 23:03:07,133 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 23:03:07,133 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:03:22,369 - INFO - LLM Response Code: 200
+2026-02-09 23:03:22,369 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:03:25,149 - INFO - LLM Response Code: 200
+2026-02-09 23:03:25,149 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求'设置备忘'与MemoExtractionWorker的关键词'备忘'和输入模式'记住.*'、'提醒.*'相匹配，且该Worker的能力包括'记录未来事件'和'设置提醒'，完全符合用户需求。",
+  "confidence": 0.95
+}...
+2026-02-09 23:03:27,588 - INFO - LLM Response Code: 200
+2026-02-09 23:03:27,588 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成直接相关的能力，其关键词和输入模式也与此请求高度匹配。",
+  "confidence": 0.95
+}...
+2026-02-09 23:03:29,532 - INFO - LLM Response Code: 200
+2026-02-09 23:03:29,532 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，这与MemoExtractionWorker的能力定义中的'设置提醒'和'记录未来事件'功能相匹配，且关键词'备忘'也符合该Worker的关键词列表。",
+  "confidence": 0.95
+}...
+2026-02-09 23:03:31,394 - INFO - LLM Response Code: 200
+2026-02-09 23:03:31,394 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求中包含关键词'委托'，且'MemoExtractionWorker'的能力定义中包含'委托任务分配'，与用户请求匹配。",
+  "confidence": 0.9
+}...
+2026-02-09 23:11:13,364 - INFO - Action Extraction Prompt Length: 1514
+2026-02-09 23:11:13,364 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:11:28,151 - INFO - LLM Response Code: 200
+2026-02-09 23:11:28,152 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:12:01,916 - INFO - Action Extraction Prompt Length: 1510
+2026-02-09 23:12:01,917 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:12:14,362 - INFO - Action Extraction Prompt Length: 1510
+2026-02-09 23:12:14,363 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:12:27,804 - INFO - LLM Response Code: 200
+2026-02-09 23:12:27,805 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "设置备忘",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:12:46,690 - INFO - LLM Response Code: 200
+2026-02-09 23:12:46,690 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及设置备忘，符合MemoExtractionWorker的能力定义中的'设置提醒'和'记录未来事件'，且关键词'备忘'也匹配该Worker的关键词列表。",
+  "confidence": 0.95
+}...
+2026-02-09 23:51:50,154 - INFO - Action Extraction Prompt Length: 1518
+2026-02-09 23:51:50,154 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:52:00,637 - INFO - LLM Response Code: 200
+2026-02-09 23:52:00,637 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:52:04,177 - INFO - LLM Response Code: 200
+2026-02-09 23:52:04,178 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "BlankedHelper",
+  "reason": "用户请求'调节音量'属于系统设备控制范畴，且'BlankedHelper'的capabilities中包含'系统设备控制'，keywords中包含'音量'，input_patterns中包含'调节.*'，因此最匹配",
+  "confidence": 0.95
+}...
+2026-02-09 23:53:02,303 - INFO - Action Extraction Prompt Length: 1518
+2026-02-09 23:53:02,303 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:53:13,658 - INFO - LLM Response Code: 200
+2026-02-09 23:53:13,658 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:53:15,904 - INFO - LLM Response Code: 200
+2026-02-09 23:53:15,905 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "用户请求'调节音量'不在任何Worker的能力范围内，且没有匹配的关键词或输入模式。",
+  "confidence": 0.0
+}...
+2026-02-09 23:55:25,113 - INFO - Action Extraction Prompt Length: 1518
+2026-02-09 23:55:25,114 - INFO - Agent Information: deepseek-v3
+2026-02-09 23:55:35,580 - INFO - LLM Response Code: 200
+2026-02-09 23:55:35,580 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-09 23:55:37,386 - INFO - LLM Response Code: 200
+2026-02-09 23:55:37,386 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的worker无法处理此类需求",
+  "confidence": 1.0
+}...

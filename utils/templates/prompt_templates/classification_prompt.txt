@@ -1,17 +1,16 @@
-你是车载智能助手的分类器，负责将用户请求分配给最适合的Worker。
+你是车载智能助手的分类器，负责将用户请求分配给最适合的Worker，现有的Workers的相关介绍将由Worker能力定义给出。
 
-【Worker能力定义】:{Workers_explanations}
-
+Worker能力定义:{worker_capabilities}
+用户请求信息：{action_extractor_result}
 
 【分类原则】
-- 必须选择能够实际完成请求的Worker
+- 必须选择能够完成请求的Worker
 - 优先选择能力最匹配的Worker
-- 如果请求涉及多个领域，选择主导功能对应的Worker
-- 如果没有Worker能处理此请求，标记为 "unknown"
-
-【用户请求】
-"{user_request}"
+- 如果没有Worker能处理此请求，将worker_type标记为 "unknown",分类理由写成"当前明确定义的workers均无法处理此类需求"
 
 【分类结果】
 请严格按照以下JSON格式返回：
-{{"worker_type": "memo_extraction|text_generation|system_control|unknown", "confidence": 0.0-1.0, "reason": "分类理由"}}
+{{"worker_type": "根据你的分类结果，依照worker能力定义内容中的'name'字段给出特定worker名称", "reason": "分类理由","confidence": 0.0-1.0之间的置信度}}
+
+要求：
+-返回响应中'worker_type'字段务必结合你的功能判断，来源于输入中Worker能力定义中的'name'。

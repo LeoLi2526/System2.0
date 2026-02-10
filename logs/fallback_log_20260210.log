@@ -1,0 +1,1415 @@
+2026-02-10 01:01:25,757 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:01:25,758 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:01:37,056 - INFO - LLM Response Code: 200
+2026-02-10 01:01:37,056 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:01:38,567 - INFO - LLM Response Code: 200
+2026-02-10 01:01:38,567 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 01:01:40,025 - INFO - LLM Response Code: 200
+2026-02-10 01:01:40,025 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，与TextGenerationWorker的能力定义完全匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:01:42,763 - INFO - LLM Response Code: 200
+2026-02-10 01:01:42,764 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'模式",
+  "confidence": 0.95
+}...
+2026-02-10 01:02:42,616 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:02:42,616 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:02:53,242 - INFO - LLM Response Code: 200
+2026-02-10 01:02:53,242 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:02:54,573 - INFO - LLM Response Code: 200
+2026-02-10 01:02:54,574 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:02:56,518 - INFO - LLM Response Code: 200
+2026-02-10 01:02:56,519 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:02:58,852 - INFO - LLM Response Code: 200
+2026-02-10 01:02:58,853 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且符合MemoExtractionWorker的input_patterns中的'委托.*'模式，该Worker具备'委托任务分配'能力",
+  "confidence": 0.95
+}...
+2026-02-10 01:03:18,820 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:03:18,820 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:03:29,287 - INFO - LLM Response Code: 200
+2026-02-10 01:03:29,288 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:03:32,180 - INFO - LLM Response Code: 200
+2026-02-10 01:03:32,180 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:04:38,566 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:04:38,566 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:04:50,079 - INFO - LLM Response Code: 200
+2026-02-10 01:04:50,079 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:04:51,471 - INFO - LLM Response Code: 200
+2026-02-10 01:04:51,471 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 01:05:41,281 - INFO - LLM Response Code: 200
+2026-02-10 01:05:41,281 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容、生成教程步骤等相关能力，与请求高度匹配",
+  "confidence": 0.95
+}...
+2026-02-10 01:06:01,147 - INFO - LLM Response Code: 200
+2026-02-10 01:06:01,147 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 01:06:57,109 - ERROR - {"timestamp": "2026-02-10T01:06:44.450405", "source": "prompt_selector", "error": "提示模板 加载失败:[Errno 2] No such file or directory: 'utils/templates/prompt_templates/prompt_creator.txt'"}
+2026-02-10 01:08:01,688 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:08:01,688 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:08:12,732 - INFO - LLM Response Code: 200
+2026-02-10 01:08:12,733 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:08:14,472 - INFO - LLM Response Code: 200
+2026-02-10 01:08:14,472 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:08:16,842 - INFO - LLM Response Code: 200
+2026-02-10 01:08:16,842 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求完全匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:08:23,890 - INFO - LLM Response Code: 200
+2026-02-10 01:08:23,890 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 01:11:07,644 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:11:07,645 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:11:15,720 - INFO - LLM Response Code: 200
+2026-02-10 01:11:15,721 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:11:17,563 - INFO - LLM Response Code: 200
+2026-02-10 01:11:17,564 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 01:11:19,202 - INFO - LLM Response Code: 200
+2026-02-10 01:11:19,202 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:11:21,557 - INFO - LLM Response Code: 200
+2026-02-10 01:11:21,557 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求最匹配",
+  "confidence": 0.9
+}...
+2026-02-10 01:12:36,822 - INFO - LLM Response Code: 200
+2026-02-10 01:12:36,823 - INFO - W-8 LLM 响应内容: {
+    "prompt": "请将当前播放的音乐音量调低至30%，并设置定时在明天早上8点自动关闭音乐播放器，以确保为明天的会议创造一个安静的准备环境。",
+    "reason": "当前需求的核心是调整音乐音量以准备会议，这涉及音频设备控制和时间触发功能。已有的MemoExtractionWorker专注于信息记录和任务管理，TextGenerationWorker专注于文本创作，两者都...
+2026-02-10 01:21:10,939 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:21:10,939 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:21:20,115 - INFO - LLM Response Code: 200
+2026-02-10 01:21:20,116 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:21:21,929 - INFO - LLM Response Code: 200
+2026-02-10 01:21:21,929 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:21:26,218 - INFO - LLM Response Code: 200
+2026-02-10 01:21:26,218 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 01:21:28,952 - INFO - LLM Response Code: 200
+2026-02-10 01:21:28,953 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求为'设置提醒'，属于MemoExtractionWorker的能力范围，该Worker具备设置提醒的功能，并且关键词和输入模式也匹配。",
+  "confidence": 0.95
+}...
+2026-02-10 01:21:48,364 - INFO - LLM Response Code: 200
+2026-02-10 01:21:48,365 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调整设备音量以满足用户需求。当收到音量调整请求时，你需要立即执行以下操作：\n1. 确认当前环境是否允许音量调整（如会议模式、夜间模式等）\n2. 根据请求内容精确调整音量级别（如降低到30%基础音量）\n3. 提供操作确认反馈\n4. 记录操作日志以备...
+2026-02-10 01:26:05,761 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:26:05,761 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:26:16,954 - INFO - LLM Response Code: 200
+2026-02-10 01:26:16,954 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:26:18,692 - INFO - LLM Response Code: 200
+2026-02-10 01:26:18,692 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:26:21,047 - INFO - LLM Response Code: 200
+2026-02-10 01:26:21,048 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 01:26:23,293 - INFO - LLM Response Code: 200
+2026-02-10 01:26:23,293 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'模式",
+  "confidence": 0.95
+}...
+2026-02-10 01:26:35,508 - INFO - LLM Response Code: 200
+2026-02-10 01:26:35,508 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调整设备音量以满足用户需求。当收到音量调整请求时，你需要根据以下输入信息执行操作：\n\n输入数据占位符：\n- 'action_id': 唯一标识本次请求的ID\n- 'request_time': 请求发起的时间戳\n- 'requester': 提...
+2026-02-10 01:30:55,905 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:30:55,905 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:31:05,267 - INFO - LLM Response Code: 200
+2026-02-10 01:31:05,271 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:31:06,432 - INFO - LLM Response Code: 200
+2026-02-10 01:31:06,432 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:31:08,239 - INFO - LLM Response Code: 200
+2026-02-10 01:31:08,240 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:31:09,976 - INFO - LLM Response Code: 200
+2026-02-10 01:31:09,977 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求匹配。",
+  "confidence": 0.9
+}...
+2026-02-10 01:31:14,410 - INFO - LLM Response Code: 200
+2026-02-10 01:31:14,410 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调整音频设备的音量以满足用户需求。请根据以下信息执行操作：\n1. 需求描述：[details]\n2. 请求发起者：[request_maker]\n3. 请求时间：[start_time]\n\n请按照以下JSON格式输出执行结果：\n{\n  \"...
+2026-02-10 01:33:07,574 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:33:07,574 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:36:46,197 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:36:46,198 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:36:54,913 - INFO - LLM Response Code: 200
+2026-02-10 01:36:54,913 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:36:56,556 - INFO - LLM Response Code: 200
+2026-02-10 01:36:56,556 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:36:58,704 - INFO - LLM Response Code: 200
+2026-02-10 01:36:58,704 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容、生成教程步骤等能力，与请求高度匹配",
+  "confidence": 0.95
+}...
+2026-02-10 01:37:00,441 - INFO - LLM Response Code: 200
+2026-02-10 01:37:00,442 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及'委托任务'，属于MemoExtractionWorker的关键词和能力范围",
+  "confidence": 0.9
+}...
+2026-02-10 01:37:08,737 - INFO - LLM Response Code: 200
+2026-02-10 01:37:08,737 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调整设备音量以满足用户需求。请根据以下输入信息执行音量调整操作：\n\n输入数据：{\n  \"request_maker\": \"{request_maker}\",\n  \"action_reason\": \"{reason}\",\n  \"...
+2026-02-10 01:40:25,289 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:40:25,290 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:40:32,947 - INFO - LLM Response Code: 200
+2026-02-10 01:40:32,948 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:40:34,924 - INFO - LLM Response Code: 200
+2026-02-10 01:40:34,925 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:40:37,093 - INFO - LLM Response Code: 200
+2026-02-10 01:40:37,094 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 01:40:39,279 - INFO - LLM Response Code: 200
+2026-02-10 01:40:39,280 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能",
+  "confidence": 0.95
+}...
+2026-02-10 01:40:49,012 - INFO - LLM Response Code: 200
+2026-02-10 01:40:49,012 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调节设备音量以满足用户需求。当收到以下格式的输入时，请立即执行音量调节操作：\n\n输入格式：\n{\n  \"request_maker\": \"[说话者名称]\",\n  \"details\": \"[具体音量调节要求]\",\n  \"star...
+2026-02-10 01:42:14,328 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:42:14,328 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:42:23,005 - INFO - LLM Response Code: 200
+2026-02-10 01:42:23,006 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:42:25,055 - INFO - LLM Response Code: 200
+2026-02-10 01:42:25,055 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:42:27,321 - INFO - LLM Response Code: 200
+2026-02-10 01:42:27,321 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:42:29,481 - INFO - LLM Response Code: 200
+2026-02-10 01:42:29,481 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'模式",
+  "confidence": 0.95
+}...
+2026-02-10 01:42:35,396 - INFO - LLM Response Code: 200
+2026-02-10 01:42:35,397 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责处理与音频设备相关的调节请求。当前需要你将音乐音量调低，以便为明天的会议做好准备。请根据以下输入信息执行操作：\n\n- 操作类型：音量调节\n- 调节方向：降低\n- 调节目的：为会议做准备\n- 执行时间：立即\n\n请按照以下JSON格式输出执行结...
+2026-02-10 01:50:21,933 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:50:21,935 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:50:32,000 - INFO - LLM Response Code: 200
+2026-02-10 01:50:32,001 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:50:33,269 - INFO - LLM Response Code: 200
+2026-02-10 01:50:33,270 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:50:35,989 - INFO - LLM Response Code: 200
+2026-02-10 01:50:35,989 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:50:37,964 - INFO - LLM Response Code: 200
+2026-02-10 01:50:37,964 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及'委托任务'，符合MemoExtractionWorker的关键词'委托'和能力'委托任务分配'",
+  "confidence": 0.9
+}...
+2026-02-10 01:50:42,452 - INFO - LLM Response Code: 200
+2026-02-10 01:50:42,452 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "你是一个音频控制助手，专门负责调整设备音量以满足用户需求。当收到{"full_description"}时，你需要立即将背景音乐音量调低至适宜会议准备的水平，并确保调整过程不会干扰其他正在进行的工作。若用户有特殊要求{"user_advice"}，则优先按照用户指示执行。完成后需反馈...
+2026-02-10 01:50:42,452 - ERROR - W-8 LLM 调用异常: Expecting ',' delimiter: line 3 column 50 (char 92)
+Traceback (most recent call last):
+  File "/home/leoli/Downloads_for_ai/Programs/System2.0/utils/load_selector.py", line 50, in call_llm_dashscope
+    result = json.loads(cleaned_result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 50 (char 92)
+2026-02-10 01:51:21,709 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:51:21,710 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:51:30,039 - INFO - LLM Response Code: 200
+2026-02-10 01:51:30,039 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:51:31,704 - INFO - LLM Response Code: 200
+2026-02-10 01:51:31,704 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:51:33,630 - INFO - LLM Response Code: 200
+2026-02-10 01:51:33,630 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求为'文本生成'，与TextGenerationWorker的能力'创作文本内容'等相匹配",
+  "confidence": 0.9
+}...
+2026-02-10 01:51:35,790 - INFO - LLM Response Code: 200
+2026-02-10 01:51:35,790 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其关键词列表和输入模式均匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 01:51:42,456 - INFO - LLM Response Code: 200
+2026-02-10 01:51:42,458 - INFO - W-8 LLM 响应内容: {
+    "worker_type": "AudioControlWorker",
+    "prompt": "You are an AudioControlWorker specialized in managing audio settings in smart environments. Your primary responsibility is to adjust audio par...
+2026-02-10 01:57:20,107 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:57:20,108 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:57:30,084 - INFO - LLM Response Code: 200
+2026-02-10 01:57:30,084 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:57:31,406 - INFO - LLM Response Code: 200
+2026-02-10 01:57:31,407 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:57:33,375 - INFO - LLM Response Code: 200
+2026-02-10 01:57:33,375 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容、生成教程步骤等相关能力，与请求最匹配",
+  "confidence": 0.95
+}...
+2026-02-10 01:57:35,809 - INFO - LLM Response Code: 200
+2026-02-10 01:57:35,810 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其关键词列表和输入模式均匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 01:58:31,786 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:58:31,786 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:58:40,729 - INFO - LLM Response Code: 200
+2026-02-10 01:58:40,730 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:58:42,777 - INFO - LLM Response Code: 200
+2026-02-10 01:58:42,778 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 01:58:44,395 - INFO - LLM Response Code: 200
+2026-02-10 01:58:44,395 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:58:47,819 - INFO - LLM Response Code: 200
+2026-02-10 01:58:47,819 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且符合MemoExtractionWorker的input_patterns中的'委托.*'模式，该Worker具备'委托任务分配'的能力",
+  "confidence": 0.95
+}...
+2026-02-10 01:59:41,792 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 01:59:41,792 - INFO - Agent Information: deepseek-v3
+2026-02-10 01:59:50,564 - INFO - LLM Response Code: 200
+2026-02-10 01:59:50,565 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 01:59:52,201 - INFO - LLM Response Code: 200
+2026-02-10 01:59:52,201 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 01:59:54,215 - INFO - LLM Response Code: 200
+2026-02-10 01:59:54,215 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 01:59:56,604 - INFO - LLM Response Code: 200
+2026-02-10 01:59:56,605 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其关键词列表和输入模式均匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 02:00:42,055 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:00:42,055 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:00:52,630 - INFO - LLM Response Code: 200
+2026-02-10 02:00:52,630 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:00:54,472 - INFO - LLM Response Code: 200
+2026-02-10 02:00:54,472 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:00:56,393 - INFO - LLM Response Code: 200
+2026-02-10 02:00:56,393 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义和关键词匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:00:58,484 - INFO - LLM Response Code: 200
+2026-02-10 02:00:58,484 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中包含'委托任务分配'，与用户请求匹配。",
+  "confidence": 0.9
+}...
+2026-02-10 02:05:11,767 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:05:11,767 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:05:22,227 - INFO - LLM Response Code: 200
+2026-02-10 02:05:22,228 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:05:23,864 - INFO - LLM Response Code: 200
+2026-02-10 02:05:23,864 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:05:26,014 - INFO - LLM Response Code: 200
+2026-02-10 02:05:26,014 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:05:28,061 - INFO - LLM Response Code: 200
+2026-02-10 02:05:28,062 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求。",
+  "confidence": 0.95
+}...
+2026-02-10 02:08:16,013 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:08:16,013 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:08:25,005 - INFO - LLM Response Code: 200
+2026-02-10 02:08:25,005 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:08:26,745 - INFO - LLM Response Code: 200
+2026-02-10 02:08:26,746 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:08:28,405 - INFO - LLM Response Code: 200
+2026-02-10 02:08:28,406 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 02:08:30,934 - INFO - LLM Response Code: 200
+2026-02-10 02:08:30,934 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且符合MemoExtractionWorker的输入模式'委托.*'，该Worker具备'委托任务分配'能力",
+  "confidence": 0.95
+}...
+2026-02-10 02:08:35,770 - INFO - LLM Response Code: 200
+2026-02-10 02:08:35,771 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，专门负责处理与音频设备控制相关的请求，包括音量调整、播放控制等",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点",
+                "用户意见": "None"
+ ...
+2026-02-10 02:10:11,494 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:10:11,495 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:10:22,459 - INFO - LLM Response Code: 200
+2026-02-10 02:10:22,459 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:10:24,199 - INFO - LLM Response Code: 200
+2026-02-10 02:10:24,199 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 02:10:26,758 - INFO - LLM Response Code: 200
+2026-02-10 02:10:26,759 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 02:10:28,601 - INFO - LLM Response Code: 200
+2026-02-10 02:10:28,601 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及'委托任务'，符合MemoExtractionWorker的关键词'委托'和能力'委托任务分配'",
+  "confidence": 0.9
+}...
+2026-02-10 02:10:33,898 - INFO - LLM Response Code: 200
+2026-02-10 02:10:33,898 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，专门负责处理与音频设备音量调节相关的请求，确保环境音量符合用户需求",
+            "input_data": {
+                "用户需求": "Speaker 2 请求将音乐调小一点，以便为明天的会议做准备",
+                "...
+2026-02-10 02:14:26,308 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:14:26,308 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:14:37,429 - INFO - LLM Response Code: 200
+2026-02-10 02:14:37,430 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:14:39,170 - INFO - LLM Response Code: 200
+2026-02-10 02:14:39,170 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:14:41,892 - INFO - LLM Response Code: 200
+2026-02-10 02:14:41,892 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容的能力，且其关键词和输入模式与请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:14:43,983 - INFO - LLM Response Code: 200
+2026-02-10 02:14:43,984 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求最匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:14:53,098 - INFO - LLM Response Code: 200
+2026-02-10 02:14:53,099 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境调节助手，负责根据用户需求调整环境参数（如音量、光线等）以优化工作或休息条件",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，核心目的是为了准备明天的会议",
+               ...
+2026-02-10 02:14:53,099 - ERROR - W-8 LLM 调用异常: Extra data: line 16 column 1 (char 502)
+Traceback (most recent call last):
+  File "/home/leoli/Downloads_for_ai/Programs/System2.0/utils/load_selector.py", line 50, in call_llm_dashscope
+    result = json.loads(cleaned_result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 16 column 1 (char 502)
+2026-02-10 02:15:07,705 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:15:07,705 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:15:18,697 - INFO - LLM Response Code: 200
+2026-02-10 02:15:18,697 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:15:20,130 - INFO - LLM Response Code: 200
+2026-02-10 02:15:20,130 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 02:15:22,077 - INFO - LLM Response Code: 200
+2026-02-10 02:15:22,078 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求为'文本生成'，与TextGenerationWorker的能力'创作文本内容'等相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 02:15:23,865 - INFO - LLM Response Code: 200
+2026-02-10 02:15:23,866 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及'委托任务'，属于MemoExtractionWorker的能力范围，且关键词匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:15:28,016 - INFO - LLM Response Code: 200
+2026-02-10 02:15:28,017 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，专门负责处理与音频设备相关的调节请求，确保环境音量符合用户需求",
+            "input_data": {
+                "用户需求": "将音乐调小一点，以便明天下午开会时不受干扰",
+                "用户意见": "None...
+2026-02-10 02:16:54,207 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:16:54,208 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:17:05,498 - INFO - LLM Response Code: 200
+2026-02-10 02:17:05,499 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:17:07,138 - INFO - LLM Response Code: 200
+2026-02-10 02:17:07,138 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:17:09,291 - INFO - LLM Response Code: 200
+2026-02-10 02:17:09,291 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容的能力，且其关键词和输入模式与用户请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:17:11,335 - INFO - LLM Response Code: 200
+2026-02-10 02:17:11,335 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 02:17:17,419 - INFO - LLM Response Code: 200
+2026-02-10 02:17:17,419 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境调节助手，负责根据用户需求调整环境参数以优化工作/生活场景",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，核心目的是为了准备明天的会议",
+                "用户意见": ...
+2026-02-10 02:18:41,710 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:18:41,710 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:18:53,019 - INFO - LLM Response Code: 200
+2026-02-10 02:18:53,020 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:18:54,719 - INFO - LLM Response Code: 200
+2026-02-10 02:18:54,720 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:18:56,605 - INFO - LLM Response Code: 200
+2026-02-10 02:18:56,605 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力匹配",
+  "confidence": 1.0
+}...
+2026-02-10 02:18:58,650 - INFO - LLM Response Code: 200
+2026-02-10 02:18:58,650 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求。",
+  "confidence": 0.9
+}...
+2026-02-10 02:19:03,773 - INFO - LLM Response Code: 200
+2026-02-10 02:19:03,773 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境调节助手，负责根据用户需求调整环境参数（如音量、光线等）以适应当前任务需求",
+            "input_data": {
+                "用户需求": "将音乐调小一点，以便准备明天的会议",
+                "用户意见": "None"
+ ...
+2026-02-10 02:34:41,857 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:34:41,858 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:34:53,545 - INFO - LLM Response Code: 200
+2026-02-10 02:34:53,545 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:34:55,387 - INFO - LLM Response Code: 200
+2026-02-10 02:34:55,388 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:34:57,741 - INFO - LLM Response Code: 200
+2026-02-10 02:34:57,741 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求为'文本生成'，与TextGenerationWorker的能力'创作文本内容'等相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 02:34:59,790 - INFO - LLM Response Code: 200
+2026-02-10 02:34:59,790 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且符合MemoExtractionWorker的输入模式和处理能力",
+  "confidence": 0.9
+}...
+2026-02-10 02:35:04,236 - INFO - LLM Response Code: 200
+2026-02-10 02:35:04,236 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，负责根据用户需求调整音频设备的音量设置，确保环境音量符合特定场合要求",
+            "input_data": {
+                "用户需求": "将音乐调小一点，以便明天下午开会时不受干扰",
+                "用户意见": "N...
+2026-02-10 02:41:28,233 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:41:28,233 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:41:38,867 - INFO - LLM Response Code: 200
+2026-02-10 02:41:38,867 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2, Speaker 3",
+    ...
+2026-02-10 02:41:40,464 - INFO - LLM Response Code: 200
+2026-02-10 02:41:40,465 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 02:41:42,450 - INFO - LLM Response Code: 200
+2026-02-10 02:41:42,450 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配。",
+  "confidence": 1.0
+}...
+2026-02-10 02:41:44,413 - INFO - LLM Response Code: 200
+2026-02-10 02:41:44,413 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求最匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:41:48,903 - INFO - LLM Response Code: 200
+2026-02-10 02:41:48,904 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，负责根据用户需求调整音频设备的音量大小",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备",
+                "用户意见": "None"
+ ...
+2026-02-10 02:43:07,831 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:43:07,832 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:43:19,121 - INFO - LLM Response Code: 200
+2026-02-10 02:43:19,121 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:43:21,270 - INFO - LLM Response Code: 200
+2026-02-10 02:43:21,270 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:43:23,317 - INFO - LLM Response Code: 200
+2026-02-10 02:43:23,317 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 02:43:25,063 - INFO - LLM Response Code: 200
+2026-02-10 02:43:25,063 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求涉及'委托任务'，符合MemoExtractionWorker的关键词'委托'和能力'委托任务分配'",
+  "confidence": 0.9
+}...
+2026-02-10 02:43:31,218 - INFO - LLM Response Code: 200
+2026-02-10 02:43:31,218 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频控制助手，负责根据用户需求调整音频设备的音量或播放状态",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点",
+                "用户意见": "None"
+          ...
+2026-02-10 02:45:11,557 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:45:11,558 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:45:21,745 - INFO - LLM Response Code: 200
+2026-02-10 02:45:21,746 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:45:23,540 - INFO - LLM Response Code: 200
+2026-02-10 02:45:23,540 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:45:25,590 - INFO - LLM Response Code: 200
+2026-02-10 02:45:25,591 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:45:27,536 - INFO - LLM Response Code: 200
+2026-02-10 02:45:27,536 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'模式",
+  "confidence": 0.95
+}...
+2026-02-10 02:45:32,863 - INFO - LLM Response Code: 200
+2026-02-10 02:45:32,863 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "VolumeControlWorker是一个专门处理音频调节需求的agent，负责根据用户需求调整设备音量或音频播放设置。",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备...
+2026-02-10 02:48:18,008 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 02:48:18,008 - INFO - Agent Information: deepseek-v3
+2026-02-10 02:48:28,491 - INFO - LLM Response Code: 200
+2026-02-10 02:48:28,492 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 02:48:30,212 - INFO - LLM Response Code: 200
+2026-02-10 02:48:30,212 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 02:48:32,139 - INFO - LLM Response Code: 200
+2026-02-10 02:48:32,139 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力匹配",
+  "confidence": 0.9
+}...
+2026-02-10 02:48:34,055 - INFO - LLM Response Code: 200
+2026-02-10 02:48:34,055 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且符合MemoExtractionWorker的输入模式'委托.*'，该Worker具备'委托任务分配'的能力",
+  "confidence": 0.9
+}...
+2026-02-10 02:48:39,291 - INFO - LLM Response Code: 200
+2026-02-10 02:48:39,291 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音量调节助手，负责根据用户需求调整设备音量，确保环境适宜",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便准备明天的会议",
+                "用户意见": "None"
+ ...
+2026-02-10 03:02:06,451 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 03:02:06,451 - INFO - Agent Information: deepseek-v3
+2026-02-10 03:02:17,218 - INFO - LLM Response Code: 200
+2026-02-10 03:02:17,219 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 03:02:18,958 - INFO - LLM Response Code: 200
+2026-02-10 03:02:18,958 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 03:02:21,520 - INFO - LLM Response Code: 200
+2026-02-10 03:02:21,521 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等相关功能，与用户请求高度匹配",
+  "confidence": 1.0
+}...
+2026-02-10 03:02:23,874 - INFO - LLM Response Code: 200
+2026-02-10 03:02:23,874 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中包含'委托任务分配'，能够处理此类请求",
+  "confidence": 0.9
+}...
+2026-02-10 03:02:28,688 - INFO - LLM Response Code: 200
+2026-02-10 03:02:28,688 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，负责根据用户需求调整设备音量",
+            "input_data": {
+                "用户需求": "将音乐调小一点，以便为明天的会议做准备",
+                "用户意见": "None"
+            },
+  ...
+2026-02-10 13:40:19,360 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:40:19,360 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:40:28,289 - INFO - LLM Response Code: 200
+2026-02-10 13:40:28,290 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:40:30,235 - INFO - LLM Response Code: 200
+2026-02-10 13:40:30,235 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 13:40:32,275 - INFO - LLM Response Code: 200
+2026-02-10 13:40:32,276 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 0.9
+}...
+2026-02-10 13:40:34,738 - INFO - LLM Response Code: 200
+2026-02-10 13:40:34,738 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求'设置提醒'属于MemoExtractionWorker的能力范围，该Worker具备'设置提醒'的能力，并且关键词和输入模式也匹配。",
+  "confidence": 0.95
+}...
+2026-02-10 13:40:40,676 - INFO - LLM Response Code: 200
+2026-02-10 13:40:40,676 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "VolumeControlWorker是一个专门负责调整音频设备音量的agent，能够根据用户需求精确调节音量大小，适用于会议准备、娱乐活动等场景。",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一...
+2026-02-10 13:43:08,121 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:43:08,121 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:43:17,347 - INFO - LLM Response Code: 200
+2026-02-10 13:43:17,347 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:43:19,291 - INFO - LLM Response Code: 200
+2026-02-10 13:43:19,292 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 13:43:21,576 - INFO - LLM Response Code: 200
+2026-02-10 13:43:21,577 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等相关能力，与用户请求高度匹配",
+  "confidence": 0.95
+}...
+2026-02-10 13:43:24,821 - INFO - LLM Response Code: 200
+2026-02-10 13:43:24,821 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'模式",
+  "confidence": 0.95
+}...
+2026-02-10 13:43:32,014 - INFO - LLM Response Code: 200
+2026-02-10 13:43:32,015 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音量调节助手，负责根据用户需求调整音乐音量，确保环境适宜",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便准备明天的会议",
+                "用户意见": "None"
+ ...
+2026-02-10 13:45:54,630 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:45:54,630 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:46:06,744 - INFO - LLM Response Code: 200
+2026-02-10 13:46:06,745 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:46:09,273 - INFO - LLM Response Code: 200
+2026-02-10 13:46:09,274 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 13:46:11,832 - INFO - LLM Response Code: 200
+2026-02-10 13:46:11,832 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker的能力包括创作文本内容、生成教程步骤等，与用户请求高度匹配",
+  "confidence": 0.95
+}...
+2026-02-10 13:46:14,187 - INFO - LLM Response Code: 200
+2026-02-10 13:46:14,187 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求匹配。",
+  "confidence": 0.9
+}...
+2026-02-10 13:46:27,499 - INFO - LLM Response Code: 200
+2026-02-10 13:46:27,500 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境调节助手，专门处理与音频、光照等环境调节相关的请求，确保环境适宜用户当前活动需求",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，核心目的是为了准备明天的会议",
+             ...
+2026-02-10 13:46:27,500 - ERROR - W-8 LLM 调用异常: Extra data: line 22 column 1 (char 687)
+Traceback (most recent call last):
+  File "/home/leoli/Downloads_for_ai/Programs/System2.0/utils/load_selector.py", line 54, in call_llm_dashscope
+    result = json.loads(cleaned_result)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leoli/anaconda3/envs/langchain/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 22 column 1 (char 687)
+2026-02-10 13:48:24,983 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:48:24,983 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:48:37,956 - INFO - LLM Response Code: 200
+2026-02-10 13:48:37,957 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:48:39,695 - INFO - LLM Response Code: 200
+2026-02-10 13:48:39,695 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 1.0
+}...
+2026-02-10 13:48:42,288 - INFO - LLM Response Code: 200
+2026-02-10 13:48:42,289 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容的能力，且其关键词和输入模式与用户请求匹配",
+  "confidence": 0.9
+}...
+2026-02-10 13:48:44,388 - INFO - LLM Response Code: 200
+2026-02-10 13:48:44,388 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含'委托'关键词，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求。",
+  "confidence": 0.9
+}...
+2026-02-10 13:48:50,244 - INFO - LLM Response Code: 200
+2026-02-10 13:48:50,244 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音量调节助手，负责根据用户需求调整设备音量，确保环境适宜",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，目的是为了准备明天的会议",
+                "用户意见": "None...
+2026-02-10 13:50:56,323 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:50:56,323 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:51:05,515 - INFO - LLM Response Code: 200
+2026-02-10 13:51:05,515 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:51:07,181 - INFO - LLM Response Code: 200
+2026-02-10 13:51:07,182 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 13:51:09,506 - INFO - LLM Response Code: 200
+2026-02-10 13:51:09,506 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求明确提到'文本生成'，且TextGenerationWorker的能力定义中包含'创作文本内容'等与文本生成相关的功能",
+  "confidence": 1.0
+}...
+2026-02-10 13:51:12,271 - INFO - LLM Response Code: 200
+2026-02-10 13:51:12,271 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其input_patterns也匹配'委托.*'的格式",
+  "confidence": 0.95
+}...
+2026-02-10 13:51:19,848 - INFO - LLM Response Code: 200
+2026-02-10 13:51:19,848 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "VolumeControlWorker是一个专门负责调节音频设备音量的agent，能够根据用户需求精确调整音量大小，确保环境音量适合特定场景需求。",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点...
+2026-02-10 13:51:52,925 - INFO - LLM Response Code: 200
+2026-02-10 13:51:52,926 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n新芽破土迎朝阳，\n细雨滋润万物生。\n春回大地添锦绣，\n人间处处是诗情。",
+    "word_count": 56,
+    "confidence": 0.9
+}...
+2026-02-10 13:52:05,081 - INFO - LLM Response Code: 200
+2026-02-10 13:52:05,081 - INFO - W-8 LLM 响应内容: {
+    "item": "Speaker 3明天要去找小王，让他帮忙做一个PPT。委托对象：小王。",
+    "confidence": 0.9
+}...
+2026-02-10 13:58:55,886 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 13:58:55,886 - INFO - Agent Information: deepseek-v3
+2026-02-10 13:59:07,200 - INFO - LLM Response Code: 200
+2026-02-10 13:59:07,200 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 13:59:08,947 - INFO - LLM Response Code: 200
+2026-02-10 13:59:08,947 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 13:59:10,991 - INFO - LLM Response Code: 200
+2026-02-10 13:59:10,991 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 0.9
+}...
+2026-02-10 13:59:13,856 - INFO - LLM Response Code: 200
+2026-02-10 13:59:13,857 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求为'设置提醒'，属于MemoExtractionWorker的能力范围，该Worker具备'设置提醒'的能力且关键词和输入模式均匹配。",
+  "confidence": 0.95
+}...
+2026-02-10 13:59:20,921 - INFO - LLM Response Code: 200
+2026-02-10 13:59:20,921 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，负责根据用户需求调整音频设备的音量大小",
+            "input_data": {
+                "用户需求": "Speaker 2 要求将音乐调小一点，以便为明天的会议做准备",
+                "用户意见": "None"
+...
+2026-02-10 13:59:35,260 - INFO - LLM Response Code: 200
+2026-02-10 13:59:35,261 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿柳梢，\n百花争艳竞妖娆。\n溪水潺潺歌不断，\n燕子归来筑新巢。\n\n阳光暖暖照大地，\n孩童欢笑放纸鸢。\n一年好景君须记，\n最是春光满人间。",
+    "word_count": 56,
+    "confidence": 0.9
+}...
+2026-02-10 13:59:41,404 - INFO - LLM Response Code: 200
+2026-02-10 13:59:41,404 - INFO - W-8 LLM 响应内容: {
+    "item": "Speaker 3 明天要去找小王，目的是让他帮忙做一个 PPT。委托对象：小王。",
+    "confidence": 1.0
+}...
+2026-02-10 14:02:05,268 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 14:02:05,269 - INFO - Agent Information: deepseek-v3
+2026-02-10 14:02:16,948 - INFO - LLM Response Code: 200
+2026-02-10 14:02:16,948 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 14:02:19,359 - INFO - LLM Response Code: 200
+2026-02-10 14:02:19,359 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 14:02:21,965 - INFO - LLM Response Code: 200
+2026-02-10 14:02:21,966 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容的能力，且其关键词和输入模式与用户请求匹配。",
+  "confidence": 0.9
+}...
+2026-02-10 14:02:24,445 - INFO - LLM Response Code: 200
+2026-02-10 14:02:24,445 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力中包含'委托任务分配'，与用户请求最匹配",
+  "confidence": 0.9
+}...
+2026-02-10 14:02:31,351 - INFO - LLM Response Code: 200
+2026-02-10 14:02:31,352 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音量调节助手，负责根据用户需求调整音乐音量大小",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点",
+                "用户意见": "None"
+            },
+ ...
+2026-02-10 14:03:06,818 - INFO - LLM Response Code: 200
+2026-02-10 14:03:06,818 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n新芽破土迎朝阳，\n纸鸢高飞逐云踪。\n最是一年春好处，\n人间处处焕新容。",
+    "word_count": 56,
+    "confidence": 0.9
+}...
+2026-02-10 14:03:27,297 - INFO - LLM Response Code: 200
+2026-02-10 14:03:27,298 - INFO - W-8 LLM 响应内容: {
+    "item": "Speaker 3明天要去找小王，让他帮忙做一个PPT。委托对象：小王。",
+    "confidence": 1.0
+}...
+2026-02-10 14:07:32,614 - INFO - Action Extraction Prompt Length: 1518
+2026-02-10 14:07:32,617 - INFO - Agent Information: deepseek-v3
+2026-02-10 14:07:45,386 - INFO - LLM Response Code: 200
+2026-02-10 14:07:45,387 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-10 14:07:47,144 - INFO - LLM Response Code: 200
+2026-02-10 14:07:47,144 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-10 14:07:49,446 - INFO - LLM Response Code: 200
+2026-02-10 14:07:49,446 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 1.0
+}...
+2026-02-10 14:07:52,417 - INFO - LLM Response Code: 200
+2026-02-10 14:07:52,417 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-10 14:07:57,421 - INFO - LLM Response Code: 200
+2026-02-10 14:07:57,422 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "音频调节助手，负责根据用户需求调整音频设备的音量大小",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备",
+                "用户意见": "None"
+ ...
+2026-02-10 14:08:02,444 - INFO - LLM Response Code: 200
+2026-02-10 14:08:02,444 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌不断，\n新燕呢喃入画中。\n\n柳丝摇曳舞翩跹，\n蝶影纷飞戏蕊间。\n最是一年春好处，\n生机盎然满人间。",
+    "word_count": 56,
+    "confidence": 0.95
+}...
+2026-02-10 14:08:11,153 - INFO - LLM Response Code: 200
+2026-02-10 14:08:11,154 - INFO - W-8 LLM 响应内容: {
+    "item": "Speaker 3明天要去找小王，让他帮忙做一个PPT。委托对象：小王。",
+    "confidence": 1.0
+}...
+2026-02-10 14:08:15,918 - INFO - LLM Response Code: 200
+2026-02-10 14:08:15,919 - INFO - W-8 LLM 响应内容: {
+  "current_volume": 50,
+  "environment_noise": "moderate",
+  "meeting_requirement": "clear_communication",
+  "adjusted_volume": 65,
+  "feedback": "Volume has been increased from 50 to 65 to ensure c...

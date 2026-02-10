@@ -1,0 +1,31 @@
+{
+  "memo_extraction": {
+    "name": "MemoExtractionWorker",
+    "capabilities": [
+      "提取备忘信息",
+      "验证时间地点人物(TLP三元组)",
+      "记录未来事件",
+      "设置提醒",
+      "委托任务分配",
+      "跟踪任务进度",
+      "处理待办事项",
+      "设置截止时间"
+    ],
+    "keywords": ["记住", "提醒", "备忘", "委托", "交给", "分配", "下次", "将来", "明天", "以后", "记得", "待办", "截止"],
+    "input_patterns": ["记住.*", "提醒.*", "记得.*", "委托.*", "交给.*", "分配.*", "待办.*"],
+    "output_format": "MemoDraft(start_ts, end_ts, location, desc, confidence)"
+  },
+  "text_generation": {
+    "name": "TextGenerationWorker",
+    "capabilities": [
+      "创作文本内容",
+      "生成教程步骤",
+      "写作诗歌文章",
+      "制作清单列表",
+      "保持主题连续性"
+    ],
+    "keywords": ["写", "创作", "生成", "制作", "教程", "如何", "步骤", "介绍", "说明", "做法"],
+    "input_patterns": ["写.*", "创作.*", "生成.*", "教程.*", "如何.*", "怎么做.*", "做法.*"],
+    "output_format": "TextGenResult(genre, content, word_count, confidence)"
+  }
+}

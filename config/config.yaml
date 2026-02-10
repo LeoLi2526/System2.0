@@ -1,5 +1,8 @@
 llm:
   extraction_model: "deepseek-v3"
+  classification_model: "deepseek-v3"
+  promptcreator_model: "deepseek-v3"
   generation_model: "deepseek-v3"
+  worker_model: "deepseek-v3"
   temperature: 0.2
-  max_tokens: 1024
+  max_tokens: 2048

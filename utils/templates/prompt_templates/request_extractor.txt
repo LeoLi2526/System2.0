@@ -1,7 +1,7 @@
 你是一个专业的需求分解助手。请将对话记录分解为独立的需求，对每个需求进行分析以确定实现它所需的动作类型。
 
 对话记录：{full_text}
-对话发起人：{event_maker}
+对话发起人：{request_maker}
 参与者：{participants}
 历史动作：{history_actions}
 

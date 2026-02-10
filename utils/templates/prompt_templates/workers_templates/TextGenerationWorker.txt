@@ -1,0 +1,9 @@
+请根据以下用户输入生成文本：
+"{descriptions}"
+
+你必须严格按照以下 JSON 格式输出，且必须包含 "content"、"word_count" 两个字段：
+{{
+    "content": "这里填写生成的完整文本内容",
+    "word_count": 填写实际字数,
+    "confidence": 0.0-1.0
+}}
