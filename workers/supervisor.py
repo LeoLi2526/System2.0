@@ -4,7 +4,8 @@ from workers.action_extractor import ActionExtractorWorker
 from workers.intelligent_classifier import IntelligentActionClassifier
 from workers.route_execute import RouteExecuter
 from typing import Optional, List, Dict, Any
-import os, asyncio
+import os, asyncio, json
+from datetime import datetime
 from workers.prompt_creator import PromptCreatorWorker
 from dotenv import load_dotenv
 load_dotenv()
@@ -19,6 +20,21 @@ class SupervisorWorker:
         self.intelligent_classifier = IntelligentActionClassifier()
         self.route_executer = RouteExecuter()
 
+        # Data Saving Initialization
+        self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.session_dir = os.path.join("data", f"run_{self.timestamp}")
+        os.makedirs(self.session_dir, exist_ok=True)
+
+    def _save_data(self, filename: str, data: Any):
+        """Helper to save data to the session directory"""
+        try:
+            filepath = os.path.join(self.session_dir, filename)
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+            print(f"数据已保存至: {filepath}")
+        except Exception as e:
+            print(f"保存数据失败 {filename}: {str(e)}")
+
     #Action Extraction
     async def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
         return await self.action_extractor.extract_actions(text_input)
@@ -29,6 +45,10 @@ class SupervisorWorker:
         返回: (以ID为键的动作提取结果字典, 包含分类信息的完整结果列表)
         """
         action_extractor_list = await self.extract_actions(text_input)
+        
+        # 保存动作提取原始数据
+        self._save_data("action_extractor_output.json", action_extractor_list)
+
         # 将列表转换为字典，以ID为键，方便后续查找
         action_extractor_results = {item['id']: item for item in action_extractor_list if 'id' in item}
         
@@ -55,6 +75,9 @@ class SupervisorWorker:
             
             classifier_full_result = {**plus_information, **classifier_result}
             classified_results.append(classifier_full_result)
+        
+        # 保存分类结果
+        self._save_data("intelligent_classifier_output.json", classified_results)
             
         return action_extractor_results, classified_results
 
@@ -93,12 +116,39 @@ class SupervisorWorker:
 
         # 执行路由
         final_responses = await self.route_executer.execute(worker_types, action_extractor_results)
+        
+        # 保存 Worker 执行结果
+        self._save_data("workers_execution_output.json", final_responses)
+        
         return final_responses
 
     async def complete_process(self) -> List[Dict[str, Any]]:
         # 保留此方法以兼容旧调用方式，或作为全自动流程的入口
         action_extractor_results, classified_results = await self.extract_and_classify()
         return await self.execute_filtered_actions(classified_results, action_extractor_results)
+
+    async def create_enhanced_records(self , filtered_results,action_results) -> List[Dict[str, Any]]:
+        """
+        创建增强记录
+        :param text_input: 输入文本
+        :return: 增强记录列表
+        """
+        action_extractor_results, classified_results = action_results, filtered_results
+        enhanced_records = []
+        for classified_result in classified_results:
+            if classified_result.get("result")["worker_type"] != "unknown":
+                action_id = classified_result.get("id", "")
+                action_extractor_result = action_extractor_results.get(action_id, {})
+                enhanced_record = {
+                    "id": action_id,
+                    "classified_result": {"worker_type":classified_result.get("worker_type", ""), 
+                                        "reason":classified_result.get("reason", ""),
+                                        "confidence":classified_result.get("confidence", 0.0)},
+                    "extraction_result": action_extractor_result,
+                }
+                enhanced_records.append(enhanced_record)
+
+        return enhanced_records
 
 if __name__ == "__main__":
     async def main():

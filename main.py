@@ -65,6 +65,8 @@ async def process_interaction(text_input=None):
             input("按回车键返回主菜单...")
             return
 
+        
+
         print(f"成功提取到 {len(classified_results)} 个潜在动作。")
         print("-" * 50)
         
@@ -85,7 +87,7 @@ async def process_interaction(text_input=None):
             while True:
                 choice = input("是否执行此动作？(y/n): ").strip().lower()
                 if choice in ['y', 'yes']:
-                    filtered_results.append(result)
+                    filtered_results.append({"id":id,"result":result})
                     print("已加入执行队列。")
                     break
                 elif choice in ['n', 'no']:
@@ -99,6 +101,9 @@ async def process_interaction(text_input=None):
             print("没有待执行的动作。")
         else:
             print(f"开始执行筛选后的 {len(filtered_results)} 个动作...")
+
+            enhanced_records = await supervisor.create_enhanced_records(filtered_results, action_results)
+            filtered_results = [item["result"] for item in filtered_results]
             final_responses = await supervisor.execute_filtered_actions(filtered_results, action_results)
             
             print("=== 执行结果 ===")
