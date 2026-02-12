@@ -3,6 +3,7 @@ from typing import Optional, List, Dict, Any
 import os
 import json
 import re
+from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 config_path = os.getenv("CONFIG_PATH")
@@ -32,26 +33,45 @@ class RouteExecuter:
             prompt = prompt_template.format_map({"descriptions":action_extractor_result})
             print(f"正在执行任务 [{worker_type_name}] (ID: {id})...")
             
-            response = await call_llm_dashscope_async(prompt, "worker_model")
+            # 初始化执行记录结构
+            execution_record = {
+                "initial_response": None,
+                "history": [],
+                "final_response": None
+            }
 
+            response = await call_llm_dashscope_async(prompt, "worker_model")
+            execution_record["initial_response"] = response
+            
+            current_response = response
             
             while True:  
                 print("" + "="*20 + " 执行结果 " + "="*20)
-                if isinstance(response, (dict, list)):
-                    print(json.dumps(response, indent=2, ensure_ascii=False))
+                if isinstance(current_response, (dict, list)):
+                    print(json.dumps(current_response, indent=2, ensure_ascii=False))
                 else:
-                    print(response)
+                    print(current_response)
                 print("="*50)
                 
                 # 用户确认环节
                 user_input = input("结果是否满意？(y/输入修改意见): ").strip()  
+                
+                # 记录当前交互状态
+                interaction_step = {
+                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "output": current_response,
+                    "user_feedback": user_input if user_input.lower() not in ['y', 'yes', ''] else "Accepted"
+                }
+                execution_record["history"].append(interaction_step)
+
                 if user_input.lower() in ['y', 'yes', '']:
-                    final_responses.append({id:response})
+                    execution_record["final_response"] = current_response
+                    final_responses.append({id: execution_record})
                     print("结果已确认。")
                     break
                 else:
                     user_advice = user_input
-                    last_response = response
+                    last_response = current_response
                     print("已收到修改意见，正在重新生成...")
            
                 
@@ -74,7 +94,7 @@ class RouteExecuter:
                     try:
                         #cycle_prompt = current_prompt_template.format_map({"last_response":last_response, "user_advice":user_advice})
                         cycle_response = await call_llm_dashscope_async(current_prompt, "worker_model")
-                        response = cycle_response
+                        current_response = cycle_response
                     except Exception as e:
                         print(f"Prompt 构造失败: {e}")
                         break
