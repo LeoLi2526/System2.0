@@ -1,0 +1,80 @@
+[
+    {
+        "action_20260213_150731_08ea90a7_1": {
+            "initial_response": {
+                "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n\n柳枝摇曳迎朝露，\n燕子归来筑巢忙。\n大地回春生机盎，\n人间处处好风光。",
+                "word_count": 56,
+                "confidence": 0.9
+            },
+            "history": [
+                {
+                    "timestamp": "2026-02-13 15:10:19",
+                    "output": {
+                        "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n\n柳枝摇曳迎朝露，\n燕子归来筑巢忙。\n大地回春生机盎，\n人间处处好风光。",
+                        "word_count": 56,
+                        "confidence": 0.9
+                    },
+                    "user_feedback": "Accepted"
+                }
+            ],
+            "final_response": {
+                "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n\n柳枝摇曳迎朝露，\n燕子归来筑巢忙。\n大地回春生机盎，\n人间处处好风光。",
+                "word_count": 56,
+                "confidence": 0.9
+            }
+        }
+    },
+    {
+        "action_20260213_150731_2bfb0f59_2": {
+            "initial_response": {
+                "item": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。",
+                "confidence": 1.0
+            },
+            "history": [
+                {
+                    "timestamp": "2026-02-13 15:10:20",
+                    "output": {
+                        "item": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。",
+                        "confidence": 1.0
+                    },
+                    "user_feedback": "Accepted"
+                }
+            ],
+            "final_response": {
+                "item": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "action_20260213_150731_c4a4874e_0": {
+            "initial_response": {
+                "action_type": "调节音量",
+                "device_id": "Speaker 2",
+                "volume_level": "逐步调小",
+                "success": "已完成",
+                "confidence": 1.0
+            },
+            "history": [
+                {
+                    "timestamp": "2026-02-13 15:10:27",
+                    "output": {
+                        "action_type": "调节音量",
+                        "device_id": "Speaker 2",
+                        "volume_level": "逐步调小",
+                        "success": "已完成",
+                        "confidence": 1.0
+                    },
+                    "user_feedback": "Accepted"
+                }
+            ],
+            "final_response": {
+                "action_type": "调节音量",
+                "device_id": "Speaker 2",
+                "volume_level": "逐步调小",
+                "success": "已完成",
+                "confidence": 1.0
+            }
+        }
+    }
+]

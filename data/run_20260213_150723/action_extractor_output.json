@@ -1,12 +1,12 @@
 [
     {
-        "id": "action_20260213_004039_fae9a616_0",
+        "id": "action_20260213_150731_c4a4874e_0",
         "action": "调节音量",
         "descriptions": {
             "event_participants": "Speaker 2",
             "request_time": "2026-02-10 下午",
             "request_location": "",
-            "details": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备。"
+            "details": "Speaker 2要求将音乐调小一点，以便准备明天的会议。"
         },
         "request_maker": "Speaker 2",
         "confidence": 1.0,
@@ -15,7 +15,7 @@
         "location_lon": ""
     },
     {
-        "id": "action_20260213_004039_f7098fb6_1",
+        "id": "action_20260213_150731_08ea90a7_1",
         "action": "文本生成",
         "descriptions": {
             "event_participants": "Speaker 3",
@@ -30,13 +30,13 @@
         "location_lon": ""
     },
     {
-        "id": "action_20260213_004039_c8f575c6_2",
+        "id": "action_20260213_150731_2bfb0f59_2",
         "action": "委托任务",
         "descriptions": {
             "event_participants": "Speaker 3, 小王",
             "request_time": "2026-02-10",
             "request_location": "",
-            "details": "Speaker 3明天要去找小王，让他帮忙做一个PPT。委托对象：小王。"
+            "details": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。"
         },
         "request_maker": "Speaker 3",
         "confidence": 1.0,

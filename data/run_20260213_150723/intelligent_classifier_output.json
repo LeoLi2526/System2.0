@@ -1,20 +1,20 @@
 [
     {
-        "id": "action_20260213_004039_fae9a616_0",
+        "id": "action_20260213_150731_c4a4874e_0",
         "request_maker": "Speaker 2",
         "start_time": "2026-02-09 17:52:09",
         "original_description": {
             "event_participants": "Speaker 2",
             "request_time": "2026-02-10 下午",
             "request_location": "",
-            "details": "Speaker 2要求将音乐调小一点，以便为明天的会议做准备。"
+            "details": "Speaker 2要求将音乐调小一点，以便准备明天的会议。"
         },
         "worker_type": "unknown",
         "reason": "当前明确定义的workers均无法处理此类需求",
-        "confidence": 1.0
+        "confidence": 0.0
     },
     {
-        "id": "action_20260213_004039_f7098fb6_1",
+        "id": "action_20260213_150731_08ea90a7_1",
         "request_maker": "Speaker 3",
         "start_time": "2026-02-09 17:52:09",
         "original_description": {
@@ -24,21 +24,21 @@
             "details": "Speaker 3请求写一首关于春天的诗。"
         },
         "worker_type": "TextGenerationWorker",
-        "reason": "用户请求涉及文本生成，TextGenerationWorker具备创作文本内容、生成教程步骤等能力，与用户需求高度匹配",
-        "confidence": 0.95
+        "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+        "confidence": 0.9
     },
     {
-        "id": "action_20260213_004039_c8f575c6_2",
+        "id": "action_20260213_150731_2bfb0f59_2",
         "request_maker": "Speaker 3",
         "start_time": "2026-02-09 17:52:09",
         "original_description": {
             "event_participants": "Speaker 3, 小王",
             "request_time": "2026-02-10",
             "request_location": "",
-            "details": "Speaker 3明天要去找小王，让他帮忙做一个PPT。委托对象：小王。"
+            "details": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。"
         },
         "worker_type": "MemoExtractionWorker",
-        "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其关键词列表和输入模式均匹配该请求",
+        "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
         "confidence": 0.95
     }
 ]

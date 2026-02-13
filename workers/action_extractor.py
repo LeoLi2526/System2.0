@@ -14,7 +14,7 @@ class ActionExtractorWorker:
     def __init__(self):
         self.prompt_template = load_prompt_template("action_extraction") # 从文件加载提示模板
         self.config = load_config(config_path) # 从文件加载配置
-    async def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
+    async def extract_actions(self, text_input: Optional[str] = None) -> tuple[List[Dict[str, Any]], Dict[str, Any]]:
         if text_input:
             # 如果有文本输入，直接构造格式化数据                       
             transcription_data = {
@@ -53,7 +53,7 @@ class ActionExtractorWorker:
             unique_suffix = str(uuid.uuid4())[:8]
             action['id'] = f"action_{timestamp}_{unique_suffix}_{i}"
             
-        return response
+        return response, transcription_data
 '''from utils.audio_integration_manager import AudioIntegrationManager
 result_path = os.getenv("RESULT_PATH")
 with open(result_path, 'r', encoding='utf-8') as f:

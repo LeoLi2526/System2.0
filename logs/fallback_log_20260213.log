@@ -139,3 +139,53 @@ SyntaxError: invalid character '：' (U+FF1A)
 }...
 2026-02-13 00:43:32,519 - INFO - LLM Response Code: 200
 2026-02-13 00:43:32,519 - INFO - W-8 LLM 响应内容: {'action_type': '调小音量', 'volume_level': '降低30%', 'target_device': 'Speaker 2', 'execution_time': '2026-02-10 下午', 'confidence': 1.0}...
+2026-02-13 15:07:23,551 - INFO - Action Extraction Prompt Length: 1518
+2026-02-13 15:07:23,551 - INFO - Agent Information: deepseek-v3
+2026-02-13 15:07:31,728 - INFO - LLM Response Code: 200
+2026-02-13 15:07:31,728 - INFO - W-8 LLM 响应内容: {
+    "actions": [
+        {
+            "id": "action_20260209175209_1",
+            "action": "调节音量",
+            "descriptions": {
+                "event_participants": "Speaker 2",
+               ...
+2026-02-13 15:07:33,574 - INFO - LLM Response Code: 200
+2026-02-13 15:07:33,574 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "TextGenerationWorker",
+  "reason": "用户请求涉及文本生成，与TextGenerationWorker的能力定义相匹配",
+  "confidence": 0.9
+}...
+2026-02-13 15:07:33,903 - INFO - LLM Response Code: 200
+2026-02-13 15:07:33,903 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "unknown",
+  "reason": "当前明确定义的workers均无法处理此类需求",
+  "confidence": 0.0
+}...
+2026-02-13 15:07:33,906 - INFO - LLM Response Code: 200
+2026-02-13 15:07:33,906 - INFO - W-8 LLM 响应内容: {
+  "worker_type": "MemoExtractionWorker",
+  "reason": "用户请求包含关键词'委托'，且MemoExtractionWorker的能力定义中明确包含'委托任务分配'功能，其keywords和input_patterns也匹配该请求",
+  "confidence": 0.95
+}...
+2026-02-13 15:07:46,472 - INFO - LLM Response Code: 200
+2026-02-13 15:07:46,474 - INFO - W-8 LLM 响应内容: {
+    "prompt": [
+        {
+            "identity": "环境调节助手，专门负责处理用户对音频、光线等环境因素的调节需求",
+            "input_data": {
+                "用户需求": "Speaker 2要求将音乐调小一点，以便准备明天的会议",
+                "用户意见": "None...
+2026-02-13 15:07:50,274 - INFO - LLM Response Code: 200
+2026-02-13 15:07:50,275 - INFO - W-8 LLM 响应内容: {
+    "content": "春风轻拂绿意浓，\n百花争艳映晴空。\n溪水潺潺歌欢畅，\n蝶舞蜂飞乐无穷。\n\n柳枝摇曳迎朝露，\n燕子归来筑巢忙。\n大地回春生机盎，\n人间处处好风光。",
+    "word_count": 56,
+    "confidence": 0.9
+}...
+2026-02-13 15:10:20,547 - INFO - LLM Response Code: 200
+2026-02-13 15:10:20,547 - INFO - W-8 LLM 响应内容: {
+    "item": "Speaker 3明天要去找小王，委托对象：小王，核心目的：让小王帮忙做一个PPT。",
+    "confidence": 1.0
+}...
+2026-02-13 15:10:22,303 - INFO - LLM Response Code: 200
+2026-02-13 15:10:22,303 - INFO - W-8 LLM 响应内容: {'action_type': '调节音量', 'device_id': 'Speaker 2', 'volume_level': '逐步调小', 'success': '已完成', 'confidence': 1.0}...

@@ -37,7 +37,9 @@ class SupervisorWorker:
 
     #Action Extraction
     async def extract_actions(self, text_input: Optional[str] = None) -> List[Dict[str, Any]]:
-        return await self.action_extractor.extract_actions(text_input)
+        actions, input_data = await self.action_extractor.extract_actions(text_input)
+        self._save_data("action_extractor_input.json", input_data)
+        return actions
     
     async def extract_and_classify(self, text_input: Optional[str] = None) -> tuple[Dict[str, Any], List[Dict[str, Any]]]:
         """
